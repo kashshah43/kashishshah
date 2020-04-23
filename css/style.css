@@ -1,0 +1,179 @@
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #aaaaaa;
+	line-height: 22px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	/* background-color: #434242; */
+	height: 100vh;
+}
+
+.fullheight {
+	height: 100%;
+}
+
+.overflowH {
+	overflow: hidden;
+}
+
+.heroImage {
+	height: 100%;
+	/* background-image: url('../images/Image.jpg');
+	background-size: cover; */
+	background-image: url(../images/IMG_0280.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.overlay {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	opacity: 0.5;
+}
+
+.menu {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	transition: all 0.5s;
+	display: table;
+	position: absolute;
+}
+
+.menu-about {
+	height: 350px;
+	width: 350px;
+	transform: rotate(-45deg);
+	top: -175px;
+	left: 55px;
+}
+
+.menu-skills {
+	height: 350px;
+	width: 350px;
+	transform: rotate(-45deg);
+	top: 76px;
+	left: 305px;
+}
+
+.menu-experience {
+	height: 550px;
+	width: 550px;
+	transform: rotate(-45deg);
+	top: 137px;
+	left: -275px;
+}
+
+.menu-projects {
+	height: 500px;
+	width: 400px;
+	transform: rotate(45deg);
+	top: 483px;
+	left: 156px;
+}
+
+.menu-contact {
+	height: 350px;
+	width: 350px;
+	transform: rotate(45deg);
+	top: 326px;
+	left: 555px;
+}
+
+.menu:hover {
+	border: 15px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu-container {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.menu-container h1 {
+	position: relative;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+}
+
+.menu-skills h1 {
+	transform: rotate(45deg);
+	margin-top: 120px;
+    margin-left: 60px;
+}
+
+.menu-about h1 {
+	transform: rotate(45deg);
+    margin-top: 220px;
+    margin-left: 20px;
+}
+
+.menu-experience h1 {
+	transform: rotate(45deg);
+    margin-top: 310px;
+    margin-left: 280px;
+}
+
+.menu-projects h1 {
+	transform: rotate(-45deg);
+    margin-top: -65px;
+    margin-left: 80px;
+}
+.menu-contact h1 {
+	transform: rotate(-45deg);
+	margin-top: 0px;
+    margin-left: 90px;
+}
+
+.menu-container h1:before {
+	position: absolute;
+    top: -30px;
+    left: -20px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+.menu-container h1:after {
+	position: absolute;
+    content: '';
+    top: -10px;
+    left: -20px;
+    width: 70px;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    transition: all 0.5s ease;
+}
+
+.menu-about h1:before {
+	content: '01';
+}
+
+.menu-skills h1:before {
+	content: '02';
+}
+
+.menu-experience h1:before {
+	content: '03';
+}
+
+.menu-projects h1:before {
+	content: '04';
+}
+
+.menu-contact h1:before {
+	content: '05';
+}
