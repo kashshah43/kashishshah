@@ -10,6 +10,21 @@ $(document).ready(function () {
         $('.contactContainer').removeClass('hideX');
     })
 
+    $('.menu-skills').click(function () {
+        $('.menu-contact').closest('.overviewOptions').addClass('hideX');
+        $('.skillContainer').removeClass('hideX');
+    })
+
+    $('.menu-experience').click(function () {
+        $('.menu-contact').closest('.overviewOptions').addClass('hideX');
+        $('.experienceContainer').removeClass('hideX');
+    })
+
+    $('.menu-projects').click(function () {
+        $('.menu-contact').closest('.overviewOptions').addClass('hideX');
+        $('.projectsContainer').removeClass('hideX');
+    })
+
     $('.close').click(function () {
         $(this).parent().addClass('hideX');
         $('.overviewOptions').removeClass('hideX');
