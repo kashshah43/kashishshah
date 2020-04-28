@@ -103,6 +103,7 @@ h1 {
 	color: white;
 	font-weight: bold;
 	text-transform: uppercase;
+	font-family: 'Oswald';
 }
 
 h2 {
@@ -112,6 +113,7 @@ h2 {
 	font-weight: 500;
 	color: #aaaaaa;
 	text-transform: uppercase;
+	font-family: 'Oswald';
 }
 
 h3 {
@@ -120,6 +122,7 @@ h3 {
 	font-weight: 400;
 	color: aliceblue;
 	text-transform: uppercase;
+	font-family: 'Oswald';
 }
 
 p {
@@ -210,7 +213,7 @@ p {
 }
 
 .button {
-	border: 2px solid #ee6817;
+	border: 2px solid darkcyan;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	color: #aaaaaa;
@@ -228,8 +231,8 @@ p {
 }
 
 .button:hover {
-	border: 2px solid #ee6817;
-	background-color: #ee6817;
+	border: 2px solid darkcyan;
+	background-color: darkcyan;
 	color: #fff;
 }
 
@@ -240,13 +243,13 @@ p {
 .title-divider {
 	width: 70px;
 	height: 5px;
-	background-color: #ee6817;
-	margin: 30px 0 50px 0;
+	background-color: darkcyan;
+	margin: 20px 0 50px 0;
 }
 
-.aboutContainer {
+.overAllDataContainer {
 	height: 100vh;
-	background-color: #000000bf;
+	background-color: #000000d8;
 }
 
 .aboutContainer .about {
@@ -264,7 +267,110 @@ p {
 	padding: 12px 0;
 }
 
+.contact h3 {
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	color: #aaaaaa;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
 .nameTitle {
 	float: right;
 	margin-top: 348px;
+}
+
+.close {
+	color: white;
+	float: right;
+	opacity: 0.8;
+	font-size: 40px;
+	transition-duration: 2s;
+}
+
+.close:hover {
+	color: white;
+	transform: rotate(90deg);
+	transition-duration: 1s;
+}
+
+button:focus {
+	outline: 0;
+}
+
+/* Icons */
+
+.fas,
+.fab {
+	color: darkcyan;
+	font-size: 45px;
+}
+
+.fas:hover,
+.fab:hover {
+	color: cadetblue;
+}
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: #5c5c5c;
+	margin: 30px 0 0 0;
+	clear: both;
+}
+
+input[type="text"],
+textarea {
+	padding: 15px;
+	border: 1px solid #3b3b3b;
+	background-color: #3b3b3b;
+	color: #a6a6a6;
+	resize: none;
+	width: 95.2%;
+	font-size: 14px;
+	margin: 20px 0 0;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+	outline: none;
+}
+
+input[type="submit"] {
+	border: 2px solid darkcyan;
+	background-color: #4f4f4f;
+	color: #aaaaaa;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 8px 18px;
+	margin: 20px 0 0;
+	transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+input[type="submit"]:hover {
+	background-color: darkcyan;
+	color: #fff
+}
+
+.address strong:hover {
+	color: white;
+}
+
+.menu:hover h1:before {
+	color: white;
+	top: 10px;
+	left: -40px;
+}
+
+.menu:hover h1:after {
+	top: 18px;
+
+}
+
+.menu:hover h1 {
+	color: darkcyan
 }

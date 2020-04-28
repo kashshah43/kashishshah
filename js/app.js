@@ -5,4 +5,14 @@ $(document).ready(function () {
         $('.aboutContainer').removeClass('hideX');
     })
 
+    $('.menu-contact').click(function () {
+        $('.menu-contact').closest('.overviewOptions').addClass('hideX');
+        $('.contactContainer').removeClass('hideX');
+    })
+
+    $('.close').click(function () {
+        $(this).parent().addClass('hideX');
+        $('.overviewOptions').removeClass('hideX');
+    })
+
 });
